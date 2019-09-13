@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <form method="get">
+        <label for="Address">Address:</label>
+        <!-- A text input to type the user's address-->
+        <input type="text" name="Address" placeholder="Enter you address or else" size="30" id="email"/>
+        <br/>
+        <label for="postal">Postal Code:</label>
+        <input type="text"name="Postal Code" placeholder="Enter your postal code so we can ship you stuff lol" size="60" id="postal" /> 
+        <br/>
+        <label for="City"> City</label>       
+        <input type="text" name="city" placeholder="Tell us where you live" id="city" />
+        <br/>
+        <p>Please choose your shipping preference so we know how to get you your stuff</p>        
+               
+         <select>
+             <option value="Standard">Standard shipping</option>
+             <option value="Oneday">One-Day Shipping</option>
+             <option value="Twoday">Two-Day(more expensive)</option> 
+        </select>
+        <br/>
+        <p>Please tell us how your going to give us money</p>
+        <label><input type="radio" name="payment" value="paypal" checked />PayPal
+               <input type="radio" name="payment" value="Debit" />Debit Card
+               <input type="radio" name="payment" value="Credit" />Credit Card </label>
+        
+        <br />
+         
+        <textarea rows="4" cols="40" name="comments" id="comments" placeholder="Comments" ></textarea>
+        <br />
+        <label><input type="checkbox" name="emailUpdates" checked />Sign me up for e-mail updates</label>
+        <br />
+        <label><input type="checkbox" name="savePay" checked />Save my payment information</label>
+        <br />
+        <input type="submit" />
+
+    </form>
+    
+       
+</body>
+</html>
