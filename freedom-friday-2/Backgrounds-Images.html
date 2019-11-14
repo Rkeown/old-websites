@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="StyleSheet_Else.css">
+    <title>Background Images</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div class="headerBar">
+    <div class="dropdown">
+        <button class="dropbtn">Background</button>
+        <div class="dropdown-content"> <a href="#" target="_blank"> Images</a> <a href="#">Custom</a> <a href="#">How to's</a> </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Images</button>
+        <div class="dropdown-content"> <a href="#" target="_blank"> Stylized</a> <a href="#">Slideshow</a> <a href="#">How to's</a> </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Text</button>
+        <div class="dropdown-content"> <a href="#" target="_blank">Fonts</a> <a href="#">Custom characters</a> <a href="#">Colours</a> </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Menus</button>
+        <div class="dropdown-content"> <a href="#" target="_blank">Nav bars</a> <a href="#">Headers</a> <a href="#">Colours</a> </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Colours</button>
+        <div class="dropdown-content"> <a href="#" target="_blank">Colour schemes</a> <a href="#">Colour picker</a> <a href="#">Color Theory</a> </div>
+    </div>
+    </div>
+    <div id="textHolder">
+        <div id="textOne">lorem ipsum<br />lorem ipsum<br />lorem ipsum<br />lorem ipsum<br />lorem ipsum<br />lorem ipsum</div>
+        <div id="textTwo"></div>
+        <div id="textThree"></div>
+    </div>
+    <div id="imageHolder">
+      <a href="copiedPage.html" onclick="copyToCB()" ><img id="imageOne" src="Images/aerosmith.jpg"  /><input type="text" value="Im 100% CSS code" id="cssCode" style="border: 1px solid white; color:white;" /></a>
+        <img id="imageTwo" src="Images/giorno hair.jpg" />
+        <script>
+            function copyToCB() {
+                var copyText = document.getElementById("cssCode");
+                copyText.select();
+                document.execCommand("copy");
+                
+            }
+        </script>
+    </div>
+</body>
+</html>

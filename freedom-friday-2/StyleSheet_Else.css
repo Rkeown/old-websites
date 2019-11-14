@@ -1,0 +1,88 @@
+﻿body {}
+.dropbtn {
+  background-color: rgba(255, 255, 255, 0.50);
+  color: white;
+  padding: 7%;
+  margin: 9%;
+  font-size: 16px;
+  border: none;
+  align-text: center;
+  min-width: 100px;
+  max-width: 100px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: linen;
+  min-width: 100px;
+  align-content: center;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding-top: 12px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: rgba(187, 19, 19, 1);
+  color: white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  align-self: center;
+  margin-left: 6px;
+  min-width: 100px;
+}
+.dropbtn:hover .dropbtn {
+  background-color: rgba(0, 0, 0, 0.50);
+  color: rgba(187, 19, 19, 1);
+}
+.headerBar {
+  margin: 0;
+  padding: 0% 27%;
+  background-color: #CC0000;
+  display: block;
+}
+#textHolder{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    position:absolute;
+    bottom:5%;   
+    width: 90%;
+    height: calc(100% - 60%);
+    border: 15px solid ;
+    border-color: #00cccc;
+    border-radius: 10px;
+}
+#imageHolder{
+    margin: 1% 10%;
+}
+#imageOne{
+    border: 2px solid black;
+    border-radius:15px;
+    overflow:hidden;
+    width:230px;
+    height:250px;
+    text-align:center;
+}
+#imageTwo{
+   border: 2px solid black;
+   border-radius:15px;
+   overflow:hidden;
+   width:230px;
+   height:250px;
+   text-align:center;
+   margin-left:30%;
+   top:20%;
+   float: right; 
+}
+#cssCode{
+    border:none;
+    color:white;
+}
+
