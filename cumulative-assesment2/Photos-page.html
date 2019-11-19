@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>RSP Pics</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="StyleSheet.css">
+    <style>
+        /*
+            quote is used to style the quote from my dad outside
+            that of all the other paragraphs
+        */
+        #quote {
+            position: relative;
+            float: right;
+            padding-right: 10px;
+        }
+
+        span {
+            font-weight: bold;
+            color: mediumpurple;
+        }
+
+        p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--Once again the main Nav bar for navigating across the pages-->
+    <header>
+        <nav>
+            <ul>
+                <li class="headerLinks"><a href="#Photos">Photos</a></li>
+                <li class="headerLinks"><a href="Videos-page.html">Videos </a></li>
+                <li class="headerLinks"> <a href="#">Others</a></li>
+                <li class="headerLinks"><a href="index.html">Main</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="spacer"></div>
+        <h1 id="Photos">Photos</h1>
+        <p>To view texts associated with an image <span>Hover</span> over the image<p />
+        <!--a div that holds all the images on this page-->
+        <div id="imageHolder">
+            <h1 style="color:white;">EST. 2019</h1>
+            <img id="foSelkirk" src="Media/Screenshot_2019-11-04-20-12-57.png" />
+            <br />
+            <br />
+            <!--Beggining of the flip card for the image that has the quote in it-->
+            <div class="flip-card" style="position:relative; left: 50%; transform:translateX(-50%);">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="Media/Screenshot_2019-11-05-11-19-53-1.png" style="position: relative;left: 50%; transform: translateX(-50%); width: 500px; height: auto;" />
+                    </div>
+                    <div class="flip-card-back">
+                        <p id="quote">"The Red King skated the bowl, hit a milestone...........then hit another...."<br />-Jay Keown</p>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+
+            <br />
+            <br />
+            <!--Just a bunch more images for the page-->
+            <img src="Media/Screenshot_2019-11-12-11-46-15.png" />
+            <h1 style="color:white; clear:right;">EST. 2016</h1>
+            <img id="phone" src="Media/20161028_123436.jpg" />
+            <h1 style="color:white;">EST. 2015</h1>
+            <img src="Media/20150305_111103_001.jpg" />
+            <br />
+            <br />
+            <img src="Media/Screenshot_2019-11-12-12-44-50.png" />
+        </div>
+    </main>
+
+</body>
+</html>
