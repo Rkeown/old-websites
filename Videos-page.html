@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>RSP Vids</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="StyleSheet.css">
+    <style>
+        /*I wanted to add a simple border around my videos
+            because I thought it would look nice
+        */
+        video {
+            border: 5px solid white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!--Who would have thought that all my webpages would have the same nav bar to
+        have continuity
+        -->
+    <header>
+        <nav>
+            <ul>
+                <li class="headerLinks"><a href="Photos-page.html">Photos</a></li>
+                <li class="headerLinks"><a href="#Videos">Videos </a></li>
+                <li class="headerLinks"><a href="#">Others</a></li>
+                <li class="headerLinks"><a href="index.html">Main</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="spacer"></div>
+        <!--Jst a bunch of videos
+            the "controls" attribute adds the basic controls for videos:
+            volume, play/pause, resolution, etc
+            -->
+        <h1 id="Videos">Videos</h1>
+        <div id="2019">
+            <h1 style="text-align:center;">EST. 2019</h1>
+            <!--I had to style all the videos internally because at the time the external wouldn't
+                effect the videos
+                -->
+            <video style="position: relative; left:50%; transform:translateX(-50%); width: 500px; height:auto;" controls>
+                <source src="Media/V_20191020_161542.mp4" type="video/mp4" />
+            </video>
+            <br />
+            <br />
+            <video style="position: relative; left:50%; transform:translateX(-50%); width: 500px; height:auto;" controls>
+                <source src="Media/V_20191110_134401.mp4" />
+            </video>
+            <br />
+            <br />
+            <video style="position: relative; left:50%; transform:translateX(-50%); width: 500px; height:auto;" controls>
+                <source src="Media/V_20191110_134831.mp4" />
+            </video>
+        </div>
+        <h1 style="position:relative; text-align:center; color:white;">EST. 2015</h1>
+        <br />
+        <br />
+        <div id="2015">
+            <video style="position: relative; left:50%; transform:translateX(-50%); width: 500px; height:auto;" controls>
+                <source src="Media/20150305_113249.mp4" type="video/mp4" />
+            </video>
+            <br />
+            <br />
+            <video style="position: relative; left:50%; transform:translateX(-50%); width: 500px; height:auto;" controls>
+                <source src="Media/20150305_113548.mp4" type="video/mp4" />
+            </video>
+
+        </div>
+    </main>
+
+</body>
+</html>
