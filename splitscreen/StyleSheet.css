@@ -56,7 +56,7 @@
     background-color:white;
     border-radius:5px;
 }
-@media only scree and (min-width:1530px){
+@media only screen and (min-width:1530px){
       iframe {
         height: 46vh;
         background-color: white;
