@@ -2,36 +2,52 @@
     background-color:cadetblue;
     text-align:center;
 }
-iframe{
-    height:46vh;
-    background-color:white;
-    width:90%;
-    /*margin-bottom:2%;*/
-    border: 3px solid #b8b9bb;
-    border-radius:5px;
+#clickjacking{
+    background-color:cadetblue;
+    color: black;
+    padding:0.5%;
+
 }
-iframe:hover{
-    border-color: #c0ff90;
-}
-div{
-    
-    text-align:center;
-}
-a{
-    display:inline-block;
-    text-decoration:none;
-    padding: 1%;
-    margin-bottom:1%;
-    background-color:#92c06e;
+#clickjacking:hover{
+    background-color:#7c7c7c;
     color:white;
-    border-radius:5px;
 }
-a:hover{
+
+    iframe {
+        height: 46vh;
+        background-color: white;
+        width: 90%;
+        /*margin-bottom:2%;*/
+        border: 3px solid #b8b9bb;
+        border-radius: 5px;
+    }
+
+        iframe:hover {
+            border-color: #c0ff90;
+        }
+
+    div {
+        text-align: center;
+        
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 1%;
+        margin-bottom: 1%;
+        background-color: #92c06e;
+        color: white;
+        border-radius: 5px;
+    }
+    a:hover{
 
        background-color: whitesmoke;
        color:#92c06e;
      
-}
+    }
+
+
 .questions{
     background-color:#92c06e;
     border-radius:5px;
@@ -40,3 +56,34 @@ a:hover{
     background-color:white;
     border-radius:5px;
 }
+@media only scree and (min-width:1530px){
+      iframe {
+        height: 46vh;
+        background-color: white;
+        width: 90%;
+        /*margin-bottom:2%;*/
+        border: 3px solid #b8b9bb;
+        border-radius: 5px;
+    }
+    a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 1%;
+        margin-bottom: 1%;
+        background-color: #92c06e;
+        color: white;
+        border-radius: 5px;
+    }
+}
+
+
+@media only screen and (min-width: 3000px){
+   iframe{
+       width:46vw;
+       height:90vh;
+   }  
+   a{
+       margin-top: 90vh;
+   }
+}
+
