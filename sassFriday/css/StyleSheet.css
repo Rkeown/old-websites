@@ -1,0 +1,52 @@
+#open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: red; }
+
+#navBar {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  background-color: #838383; }
+  #navBar:hover {
+    width: 27vw; }
+  #navBar ul {
+    list-style: none;
+    padding: 0; }
+  #navBar .menuLinks {
+    display: grid;
+    margin: 20% 0;
+    list-style: none;
+    text-align: center;
+    border: 3px solid #b88be2;
+    background-color: #b5b5b5;
+    border-radius: 0px 15px 15px 0px;
+    padding: 8% 0;
+    justify-content: center; }
+    #navBar .menuLinks:hover {
+      background-color: #b88be2;
+      border-color: #b5b5b5;
+      border-left: 10px solid aquamarine; }
+    #navBar .menuLinks a {
+      text-decoration: none; }
+
+.classContent {
+  transition: margin-left .5s;
+  padding: 20px; }
+
+body {
+  display: grid;
+  background-image: url("images/ParallaxBG.jpg");
+  margin: 0;
+  height: 100vh;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr); }
+  body #classContent {
+    background-color: white;
+    grid-area: 1 / 1 / span 6 / span 4; }
