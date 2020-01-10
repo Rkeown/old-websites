@@ -1,0 +1,15 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "sass",
+  "main": "index.js",
+  "scripts": {
+    "compile_sass": "node-sass sass/StyleSheet.scss css/StyleSheet.css -w"
+                    
+  },
+  "author": "Rkeown",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

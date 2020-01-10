@@ -1,0 +1,14 @@
+﻿@import "Components/nav.scss";
+body {
+    display: grid;
+    background-image: url("images/ParallaxBG.jpg");
+    margin: 0;
+    height: 100vh;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+
+    #classContent{
+        background-color:white;
+        grid-area: 1 / 1 / span 6 / span 4;
+    }
+}
