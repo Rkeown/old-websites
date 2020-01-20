@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="sass\Stylesheet.css" />
+    <title>Students -Bedsby</title>
+    <meta charset="utf-8" />
+</head>
+<style>
+    main{
+        overflow: scroll;
+        background-color: #d6d6d6;
+    }
+</style>
+<body>
+    <header>
+        <!-- I couldn't think of a better name-->
+        <h1 tabindex="1">Better Edsby</h1>
+
+    </header>
+    <!--this image is the little hamburger menu in the top corner it is called upon by javascript to help open the menu-->
+    <div tabindex="2" id="openNav"><img src="Images/hamburger_menu_transparent.png" alt="click to open the navigation menu"
+            style="width:30px; height:30px;" /></div>
+    <!--theres no reason that I make my navs using lists, it would probably be easier using divs but with the vertical nav i have i found it be easier-->
+    <nav id="navBar">
+        <ul>
+            <li class="menuLinks" tabindex="3"><a href="index.html">
+                    <div>Home</div>
+                </a></li>
+
+            <li class="menuLinks" tabindex="4"><a href="#">Students</a></li>
+
+            <li class="menuLinks" tabindex="5"><a href="courseWork.html">
+                    <div>Course work</div>
+                </a></li>
+
+            <li class="menuLinks"><a href="#" tabindex="6">Grading</a></li>
+            <li class="menuLinks" tabindex="7"><a href="caledar.html">Calendar</a></li>
+        </ul>
+    </nav>
+    <!-- all the students' info are inside of divs because it helps break up the text -->
+    <main>
+        <div>
+            <h3  tabindex="8"> Rory Keown</h3>
+            <br>
+            <p tabindex="9">certified cool kid, has the unbelievable power to profusely procrastinate and still pull through</p>
+        </div>
+        <div>
+            <h3 tabindex="10">Joe smith</h3>
+            <br>
+            <p tabindex="11">Is literally the most generic person in the world, Joe is a hard worker who gets his work done in time</p>
+        </div>
+        <div>
+            <h3 tabindex="12"> Pizza Hotline</h3>
+            <br>
+            <p tabindex="13">Pizza hotline is a very popular student who everyone seems to like. Great source of food</p>
+        </div>
+        <div>
+            <h3 tabindex="14">Bob Filbert</h3>
+            <br>
+            <p tabindex="15">A quiet student, Bob tends to just sort of exist during class. No one knows his mark, not even the teacher</p>
+        </div>
+        <div>
+            <h3 tabindex="16"> Austin Texas</h3>
+            <br>
+            <p tabindex="17"> I asked The Austin in our class if i could add him to the site, he said yes. <br> I dont know Austin's last name so now he's Austin Texas</p>
+        </div>
+        <div>
+            <h3 tabindex="18">Orlando Finnegan</h3>
+            <br>
+            <p tabindex="19"> Rides to school on an alligator. We don't know what language he speaks but he seems to understand what is being taught</p>
+        </div>
+        <div>
+            <h3 tabindex="20">Name McPersontester</h3>
+            <br>
+            <p tabindex="21">Name is a good student who really helps the table look better by ending with a grey stripe</p>
+        </div>
+    </main>
+    <footer>
+        <p tabindex="22">This isn't copyrighted by anything.<br>It's more of just a janky website</p>
+        <p tabindex="23">you <span id="NO">can't</span> contact me because I don't want you to >:(</p>
+
+    </footer>
+    <script src="JavaScript.js"></script>
+    </body>

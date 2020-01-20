@@ -1,0 +1,230 @@
+@media only screen and (max-width: 600px) {
+  body {
+    display: grid;
+    margin: 0;
+    height: 100vh;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+  body header {
+    grid-area: 1 / 2 / span 1 / span 2;
+    text-align: center;
+    z-index: 0;
+    overflow: visible;
+  }
+  body input {
+    grid-area: 1 / 4 / span 1 / span 1;
+    height: 20%;
+    border: 2px solid aquamarine;
+    border-radius: 2px;
+  }
+  body main {
+    border: 5px solid #b88be2;
+    border-radius: 15px;
+    grid-area: 2 / 1 / span 4 / span 4;
+  }
+  body main #classHolder {
+    background-color: #b5b5b5;
+  }
+  body main #classHolder #assignInfo {
+    display: inline-block;
+    margin-left: 40%;
+    background-color: #b5b5b5;
+  }
+  body #courses ul {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    overflow: auto;
+  }
+  body #courses li {
+    margin-top: 15%;
+    list-style: none;
+    border: 3px solid #b5b5b5;
+    background-color: aquamarine;
+    border-radius: 15px;
+  }
+  body #courses li:hover {
+    background-color: white;
+  }
+  body #courses a {
+    text-align: center;
+    text-decoration: none;
+  }
+  body #courses a div {
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  body .notif {
+    animation: wiggle 0.8s 1;
+  }
+  @keyframes wiggle {
+    0% {
+      transform: rotate(-5deg);
+    }
+    3% {
+      transform: rotate(-10deg);
+    }
+    6% {
+      transform: rotate(-15deg);
+    }
+    9% {
+      transform: rotate(-20deg);
+    }
+    12% {
+      transform: rotate(-25deg);
+    }
+    15% {
+      transform: rotate(-30deg);
+    }
+    18% {
+      transform: rotate(-35deg);
+    }
+    21% {
+      transform: rotate(-40deg);
+    }
+    24% {
+      transform: rotate(-45deg);
+    }
+    27% {
+      transform: rotate(-40deg);
+    }
+    30% {
+      transform: rotate(-35deg);
+    }
+    33% {
+      transform: rotate(-30deg);
+    }
+    36% {
+      transform: rotate(-25deg);
+    }
+    39% {
+      transform: rotate(-20deg);
+    }
+    42% {
+      transform: rotate(-15deg);
+    }
+    45% {
+      transform: rotate(-10deg);
+    }
+    48% {
+      transform: rotate(10deg);
+    }
+    51% {
+      transform: rotate(15deg);
+    }
+    54% {
+      transform: rotate(20deg);
+    }
+    57% {
+      transform: rotate(25deg);
+    }
+    60% {
+      transform: rotate(30deg);
+    }
+    63% {
+      transform: rotate(35deg);
+    }
+    66% {
+      transform: rotate(40deg);
+    }
+    69% {
+      transform: rotate(45deg);
+    }
+    72% {
+      transform: rotate(40deg);
+    }
+    75% {
+      transform: rotate(35deg);
+    }
+    78% {
+      transform: rotate(30deg);
+    }
+    81% {
+      transform: rotate(25deg);
+    }
+    84% {
+      transform: rotate(20deg);
+    }
+    87% {
+      transform: rotate(15deg);
+    }
+    90% {
+      transform: rotate(10deg);
+    }
+  }
+  body #classContent {
+    margin: 4%;
+    letter-spacing: 2px;
+    background-color: white;
+    grid-area: 2 / 1 / span 4 / span 4;
+    overflow: scroll;
+  }
+  th {
+    font-size: 13px;
+    border-radius: 15px;
+  }
+  tr:nth-child(even) {
+    background-color: #dbdbdb;
+  }
+  tr td {
+    font-size: 9px;
+    margin-left: 5%;
+  }
+  #openNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+  }
+  #navBar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.4s;
+  }
+  #navBar ul {
+    list-style: none;
+    padding: 0;
+  }
+  #navBar .menuLinks {
+    margin: 20% 0;
+    list-style: none;
+    text-align: center;
+    border: 3px solid #b88be2;
+    background-color: #b5b5b5;
+    border-radius: 0px 15px 15px 0px;
+  }
+  #navBar .menuLinks:hover {
+    background-color: white;
+    border-color: #b5b5b5;
+    border-left: 10px solid aquamarine;
+  }
+  #navBar .menuLinks a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    padding: 6% 0;
+  }
+  #navBar .menuLinks a div {
+    width: 100%;
+    height: 100%;
+    color: black;
+  }
+}

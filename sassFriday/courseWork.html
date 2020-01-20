@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Couse work -Bedsby</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="sass\Stylesheet.css" />
+</head>
+<style>
+    .notif {
+        width: 20%;
+        margin-left: 3%;
+        z-index: 4;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- I couldn't think of a better name-->
+        <h1 tabindex="1">Better Edsby</h1>
+
+    </header>
+    <!--this image is the little hamburger menu in the top corner it is called upon by javascript to help open the menu-->
+    <div tabindex="2" id="openNav"><img src="Images/hamburger_menu_transparent.png" alt="click to open the navigation menu"
+            style="width:30px; height:30px;" /></div>
+    <!--theres no reason that I make my navs using lists, it would probably be easier using divs but with the vertical nav i have i found it be easier-->
+    <nav id="navBar">
+        <ul>
+            <li class="menuLinks" tabindex="3"><a href="index.html">
+                    <div>Home</div>
+                </a></li>
+
+            <li class="menuLinks" tabindex="4"><a href="#">Students</a></li>
+
+            <li class="menuLinks" tabindex="5"><a href="courseWork.html">
+                    <div>Course work</div>
+                </a></li>
+
+            <li class="menuLinks"><a href="#" tabindex="6">Grading</a></li>
+            <li class="menuLinks" tabindex="7"><a href="caledar.html">Calendar</a></li>
+        </ul>
+    </nav>
+    <script src="JavaScript.js"></script>
+    <main id="classContent" style="overflow:hidden;">
+        <!--fancy shmancy div for all the cool class blocks-->
+        <div id="courses">
+            <!-- the onclick in the li's is used to run javascript functions to display the info -->
+            <ul>
+                <li id="ELA" onclick="openWorkELA()">
+                    <a href="#">
+                        <!-- every div with and img tag inside it is one with the little red bells-->
+                        <div>ELA <img class="notif" src="Images\notifBell_red.png"
+                                alt="notification for assignments related to your ELA class" /></div>
+                    </a>
+                </li>
+                <li id="Fr" onclick="openWorkFrench()">
+                    <a href="#">
+                        <div class="flexClass">French</div>
+                    </a>
+                </li>
+                <li id="Ma" onclick="openWorkMath()">
+                    <a href="#">
+                        <div class="flexClass">Math</div>
+                    </a>
+                </li>
+                <li id="GEO" onclick="openWorkGeo()">
+                    <a href="#">
+                        <div class="flexClass">Geo<img class="notif" src="Images\notifBell_red.png"
+                                alt="notification for assignments related to your Geography class" /></div>
+                    </a>
+                </li>
+                <li id="CS" onclick="openWorkCS()">
+                    <a href="#">
+                        <div class="flexClass">CS</div>
+                    </a>
+                </li>
+                <li id="PE" onclick="openWorkGym()">
+                    <a href="#">
+                        <div>Gym<img class="notif" src="Images\notifBell_red.png"
+                                alt="notification for assignments related to your Gym class" /></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="classHolder">
+            <!--don't actually know why this is here but I'm afraid something will break if I delete it-->
+            <p id="assignInfo"></p>
+        </div>
+    </main>
+    <footer>
+        <p>This isn't copyrighted by anything.<br>It's more of just a janky website</p>
+        <p>you <span id="NO">can't</span> contact me because I don't want you to >:(</p>
+    </footer>
+    <script src="JavaScript.js" type="JavaScript"></script>
+</body>
+
+</html>

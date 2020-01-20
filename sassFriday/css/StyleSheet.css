@@ -1,8 +1,8 @@
-#open {
+#openNav {
   position: absolute;
   top: 0;
   left: 0;
-  color: red; }
+  z-index: 2; }
 
 #navBar {
   width: 0;
@@ -12,33 +12,52 @@
   top: 0;
   left: 0;
   overflow-x: hidden;
-  transition: 0.5s;
-  background-color: #838383; }
-  #navBar:hover {
-    width: 27vw; }
+  transition: 0.4s;
+  background-color: #dbdbdb; }
   #navBar ul {
     list-style: none;
     padding: 0; }
   #navBar .menuLinks {
-    display: grid;
     margin: 20% 0;
     list-style: none;
     text-align: center;
     border: 3px solid #b88be2;
     background-color: #b5b5b5;
-    border-radius: 0px 15px 15px 0px;
-    padding: 8% 0;
-    justify-content: center; }
+    border-radius: 0px 15px 15px 0px; }
     #navBar .menuLinks:hover {
-      background-color: #b88be2;
+      background-color: white;
       border-color: #b5b5b5;
       border-left: 10px solid aquamarine; }
     #navBar .menuLinks a {
-      text-decoration: none; }
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      padding: 6% 0; }
+      #navBar .menuLinks a div {
+        width: 100%;
+        height: 100%; }
 
 .classContent {
-  transition: margin-left .5s;
+  transition: 0.5s;
   padding: 20px; }
+
+table {
+  border-collapse: collapse;
+  border-bottom: 5px solid  #b88be2;
+  width: 100%;
+  height: 30%;
+  overflow: scroll; }
+
+th {
+  font-size: 2em;
+  border-radius: 15px; }
+
+tr:nth-child(even) {
+  background-color: #dbdbdb; }
+
+tr td {
+  font-size: 18px; }
 
 body {
   display: grid;
@@ -47,6 +66,50 @@ body {
   height: 100vh;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(4, 1fr); }
+  body header {
+    grid-area: 1 / 2 / span 1 / span 2;
+    text-align: center;
+    z-index: 0;
+    overflow: visible; }
+  body input {
+    grid-area: 1 / 4 / span 1 / span 1;
+    height: 20%;
+    border: 2px solid aquamarine;
+    border-radius: 2px; }
+  body main {
+    border: 5px solid #b88be2;
+    border-radius: 15px;
+    grid-area: 2 / 1 / span 4 / span 4; }
+  body #courses ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column; }
+  body #courses li {
+    vertical-align: top;
+    margin: 2%;
+    list-style: none;
+    text-align: center;
+    border: 3px solid #b5b5b5;
+    background-color: aquamarine;
+    border-radius: 15px; }
+    body #courses li:hover {
+      background-color: white; }
+  body #courses a {
+    padding: 30%;
+    text-align: center;
+    text-decoration: none; }
+    body #courses a div {
+      width: 30%;
+      height: auto; }
   body #classContent {
+    margin: 4%;
     background-color: white;
-    grid-area: 1 / 1 / span 6 / span 4; }
+    grid-area: 2 / 1 / span 4 / span 4;
+    overflow: scroll; }
+  body footer {
+    grid-area: 6 / 1 / span 1 / span 4;
+    text-align: center;
+    background-color: #7946a8; }
+    body footer p {
+      grid-area: 6 / 2 / span 1 / span 2; }

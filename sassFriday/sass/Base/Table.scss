@@ -1,0 +1,23 @@
+﻿//styling for the table on the home page
+table {
+  border-collapse: collapse;
+  border-bottom: 5px solid #b88be2;
+  width: 100%;
+  height: 30%;
+  overflow: scroll;
+}
+
+th {
+  font-size: 2em;
+  border-radius: 15px;
+}
+tr {
+  //nth-child is used to add the zebra stripe effect to the items in the table
+  &:nth-child(even) {
+    background-color: #dbdbdb;
+  }
+  td {
+    font-size: 18px;
+    margin-left: 5%;
+  }
+}

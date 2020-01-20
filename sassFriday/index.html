@@ -1,33 +1,110 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="css/StyleSheet.css" />
-<title>Bedsby</title>
-<meta charset="utf-8" />
-    <script src="JavaScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="sass\Stylesheet.css" />
+    <title>Bedsby</title>
+    <meta charset="utf-8" />
 </head>
 
 <body>
-    <div id="open" onclick="openNav()">☰ Open</div>
-    <!--<h1>Better Edsby </h1>-->
+    <header>
+        <!-- I couldn't think of a better name-->
+        <h1 tabindex="1">Better Edsby</h1>
+
+    </header>
+    
+    <!-- the input is the the search bar, the onkeyup part is running a javascript function to sort the table when a key is released-->
+<input type="text" id="searchBar" onkeyup="search()" placeholder="Search for students..." />
+<!--this image is the little hamburger menu in the top corner it is called upon by javascript to help open the menu-->    
+<div tabindex="2" id="openNav"><img src="Images/hamburger_menu_transparent.png" alt="click to open the navigation menu"
+            style="width:30px; height:30px;" /></div>
+    <!--theres no reason that I make my navs using lists, it would probably be easier using divs but with the vertical nav i have i found it be easier-->
     <nav id="navBar">
         <ul>
-            <li id="closeNav"><a href="javascript:void(0)" onclick="closeNav()">x</a></li>
-            <li class="menuLinks"><a href="#">Home</a></li>
-              
-            <li class="menuLinks"><a href="#">Students</a></li>
-               
-            <li class="menuLinks"><a href="#">Course work</a></li>
+            <li class="menuLinks" tabindex="3"><a href="index.html">
+                    <div>Home</div>
+                </a></li>
+
+            <li class="menuLinks" tabindex="4"><a href="#">Students</a></li>
+
+            <li class="menuLinks" tabindex="5"><a href="courseWork.html">
+                    <div>Course work</div>
+                </a></li>
+
+            <li class="menuLinks"><a href="#" tabindex="6">Grading</a></li>
+            <li class="menuLinks" tabindex="7"><a href="caledar.html">Calendar</a></li>
         </ul>
     </nav>
-    <div id="classContent">
-        <!--<div class="files">
-            <h1>
-                SD20S
-            </h1>
-        </div>
-        <div class="upcoming"></div>-->
-    </div>
+    <main id="classContent">
+        <!--table full of the all of my "classmates"-->
+        <table id="studentTable">
+            <tr>
+                <th>First</th>
+                <th>Last</th>
+                <th>Class</th>
+                <th>Teacher</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Rory</td>
+                <td>Keown</td>
+                <td>CS20S</td>
+                <td>Mr Hardman</td>
+                <td>Like 5</td>
+            </tr>
+            <tr>
+                <td>Joe</td>
+                <td>Smith</td>
+                <td>NotCS20S</td>
+                <td>No one</td>
+                <td>A few</td>
+            </tr>
+            <tr>
+                <td>Pizza</td>
+                <td>Hotline</td>
+                <td>12 people</td>
+                <td>Mr Hardman</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Filbert</td>
+                <td>one of them</td>
+                <td>A teacher</td>
+                <td>IDK</td>
+            </tr>
+            <tr>
+                <td>Austin</td>
+                <td>Texas</td>
+                <td>Too Smart</td>
+                <td>Himself</td>
+                <td>over 8000</td>
+            </tr>
+            <tr>
+                <td>Orlando</td>
+                <td>Finnegan</td>
+                <td>crackhead101</td>
+                <td>Florida Man</td>
+                <td>Alligator</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>McPerson</td>
+                <td>tester</td>
+                <td>HTML</td>
+                <td>javascript/java</td>
+            </tr>
+
+        </table>
+    </main>
+    <footer>
+        <p>This isn't copyrighted by anything.<br>It's more of just a janky website</p>
+        <p>you <span id="NO">can't</span> contact me because I don't want you to >:(</p>
+
+    </footer>
+    <!--link for my javascipts... script-->
+    <script src="JavaScript.js"></script>
 </body>
 
 </html>
